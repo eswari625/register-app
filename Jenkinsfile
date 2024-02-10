@@ -33,7 +33,7 @@ pipeline{
         stage("Sonarqube analysis"){
             steps{
                 
-                    withSonarqubeEnv('sonar-server') {
+                    withSonarQubeEnv('sonar-server') {
                         sh ''' $sonar_scanner/bin/sonar-scanner sonar.projectName=Register-app \
                         sonar.projectKey=Register-app '''
                     }
