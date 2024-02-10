@@ -34,8 +34,8 @@ pipeline{
             steps{
                 
                     withSonarQubeEnv('sonar-server') {
-                        sh ''' $sonar_scanner/bin/sonar-scanner sonar.projectName=Register-app \
-                        sonar.projectKey=Register-app '''
+                        sh ''' $sonar_scanner/bin/sonar-scanner -Dsonar.projectName=Register-app \
+                        -Dsonar.projectKey=Register-app '''
                     }
    
                 }
