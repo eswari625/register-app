@@ -37,7 +37,7 @@ pipeline{
                     // withSonarQubeEnv('sonar-server') {
                     //     sh ''' $sonar_scanner/bin/sonar-scanner -Dsonar.projectName=Register-app \
                     //     -Dsonar.projectKey=Register-app '''
-                    }
+                   // }
    
                 }
             }
