@@ -14,6 +14,8 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <sonar.host.url>http://3.236.137.69/:9000</sonar.host.url>
+    <sonar.projectKey>Register-app</sonar.projectKey>
   </properties>
 
   <modules>
@@ -52,7 +54,11 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
-
+      <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
+      </plugin>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
